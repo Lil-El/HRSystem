@@ -1,8 +1,9 @@
-import Vue from 'vue'
-import App from './App.vue'
+import Vue from "vue";
+import page1 from "./views/page1/index";
+import "./assets/styles/index.scss";
 
-Vue.config.productionTip = false
+Vue.config.productionTip = false;
 
 new Vue({
-  render: h => h(App),
-}).$mount('#app')
+  render: h => h(page1),
+}).$mount("#app");
