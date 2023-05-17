@@ -33,18 +33,22 @@ export default {
   height: 100vh;
   overflow: hidden;
   box-sizing: border-box;
+  $header-height: 50px;
   .header {
     width: 100%;
-    height: 50px;
+    height: $header-height;
     box-sizing: border-box;
     &-title {
       text-align: center;
     }
   }
   .main {
-    height: 100%;
+    height: calc(100% - $header-height);
     .el-col {
+      display: flex;
+      flex-direction: column;
       border: 1px solid gray;
+      overflow-y: auto;
     }
   }
 }
