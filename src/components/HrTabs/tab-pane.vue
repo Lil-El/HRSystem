@@ -26,4 +26,9 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.hr-tab-pane {
+  flex: 1;
+  height: 0;
+}
+</style>

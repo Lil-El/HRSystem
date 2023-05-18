@@ -6,11 +6,14 @@
       <el-col><hr-menu /></el-col>
     </el-row>
     <el-row class="main" type="flex" :gutter="10">
-      <el-col :span="7">
+      <el-col class="main-left" :span="7">
         <hr-user-info />
         <hr-working />
       </el-col>
-      <el-col :span="10"> </el-col>
+      <el-col :span="10">
+        <hr-portrait />
+        <hr-industry />
+      </el-col>
       <el-col :span="7"> </el-col>
     </el-row>
   </div>
@@ -21,9 +24,11 @@ import HrDate from "./components/HrDate";
 import HrMenu from "./components/HrMenu";
 import HrUserInfo from "./components/HrUserInfo";
 import HrWorking from "./components/HrWorking";
+import HrPortrait from "./components/HrPortrait";
+import HrIndustry from "./components/HrIndustry";
 export default {
   name: "App",
-  components: { HrDate, HrMenu, HrUserInfo, HrWorking },
+  components: { HrDate, HrMenu, HrUserInfo, HrWorking, HrPortrait, HrIndustry },
 };
 </script>
 
@@ -48,7 +53,10 @@ export default {
       display: flex;
       flex-direction: column;
       border: 1px solid gray;
-      overflow-y: auto;
+    }
+    &-left {
+      display: flex;
+      flex-direction: column;
     }
   }
 }

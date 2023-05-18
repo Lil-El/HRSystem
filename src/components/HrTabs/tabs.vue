@@ -40,6 +40,9 @@ export default {
 
 <style lang="scss" scoped>
 .hr-tab {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
   .tab-navbar {
     display: flex;
     align-items: center;
