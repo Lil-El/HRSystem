@@ -29,6 +29,6 @@ export default {
 
 <style lang="scss" scoped>
 .portrait-container {
-  height: 70%;
+  flex: 3;
 }
 </style>

@@ -33,6 +33,7 @@ export default {
 <style lang="scss" scoped>
 .hr-tab-nav {
   display: flex;
+  justify-content: center;
   align-items: center;
   &__item {
     margin-right: 10px;
